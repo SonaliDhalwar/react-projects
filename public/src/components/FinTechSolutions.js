@@ -67,7 +67,7 @@ const Home = () => (
        <div className="llink">
        <a href="http://localhost:8080" target="_self">CONTACT US</a>
        </div>
-       <h3></h3><br/>
+    
        
      
      
@@ -85,7 +85,10 @@ const Services = () => (
   <div  className="services">
     <h2 className="ttext">OUR SERVICES</h2><br/><br/>
     <h4>Software Development</h4><br/><br/>
-    <p>Specialist in Java/NodeJs/React/ Html5/Postman / Maven / Hibernate/ Spring Boot / JavaScript </p><br/>
+    <p>Specialist in <ul><li>Java<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" /></li>
+    <li>NodeJs</li>
+    <li>react</li>
+    <li>Html5</li></ul>Postman / Maven / Hibernate/ Spring Boot / JavaScript </p><br/>
     <h4>Database management and Cloud Services</h4><br/><br/>
     <p>MySql , Sql Server , Postgres, Google cloud, Azure (  currently pursuing course of study ) </p><br/>
     <h4>Blockchain</h4><br/><br/>
@@ -160,7 +163,7 @@ const Contact = () => (
 
      <li>Sun Closed</li>
      <br />
-     <br />
+     
      <li>Monday - Friday: 9am - 5pm</li>
 
      <li>Saturday - Sunday: Closed</li>
@@ -175,17 +178,22 @@ const Contact = () => (
   
 
 const FinTechSolutions = () => (
+  <div>
   <BrowserRouter>
-    
     <Switch>
     <Route path="/" component={Home} exact={true} />
     <Route path="/contact" component={Contact} exact={true} />
     <Route path="/services" component={Services} exact={true} />
-    <Route component={NotFoundPage} />
-    </Switch>
     
+    </Switch>
     </BrowserRouter>
   
+    <div className="floatingButton">
+    
+    <button><a href="https://wa.me/917218287734" target="_blank" ><img src="./images/waap.png" style={{width:"50px"}} alt=""/></a>
+    </button>
+    </div>
+    </div>
     
   );
 

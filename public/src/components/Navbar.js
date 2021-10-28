@@ -1,17 +1,13 @@
 
-import React, { useState } from "react";
+import React from "react";
 
 
 
 import { NavLink } from "react-router-dom";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
+
 
 const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+  
   return (
     <div>
       <nav className="main-nav">
@@ -26,9 +22,7 @@ const Navbar = () => {
 
         {/* 2nd menu part  */}
         <div
-        className={
-          showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-        }>
+        className={ "menu-link" }>
           <ul>
             <li>
               <NavLink to="/" activeClassName="is-active" exact={true}>HOME</NavLink>
