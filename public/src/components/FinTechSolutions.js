@@ -3,6 +3,8 @@ import {  BrowserRouter, Switch,Route, Link, NavLink} from 'react-router-dom';
 //import NotFoundPage from './NotFoundPage';
 //import  ContactForm from './ContactForm';
 import Navbar from "./Navbar";
+import CarouselContainer from "./CarouselContainer";
+//import SliderData from "./SliderData";
 import Footer from './Footer';
 import ContactForm from './ContactForm';
 //import form from '@material-ui/core/Container';
@@ -29,20 +31,17 @@ const Home = () => (
   <div>
       <Navbar />
       
-      <div className="bgimg">
-      <div className="picHomePage">
-      <br/>
-    <div className="ttext">WE MAKE TECHNOLOGY ACCESSIBLE!</div>
-    <br/>
-    <div className="ttext1"><p>PROFESSIONAL</p></div><br/>
-    <div className="ttext1"><p>TECHNOLOGY VALUE</p></div><br/>
-    <div className="ttext1"> <p>CREATORS</p></div>
-    <br/>
-    <br/>
-    <div className="llink">
-       <a href="http://localhost:8080" target="_self"><h3>Book Now</h3></a></div>
-    </div>
-    </div>
+      
+      <div>
+      <div >
+      <CarouselContainer  />
+   
+       </div>
+       </div>
+      
+       
+    
+   
     <div className="hometext">
     <div className="homeh">
 
@@ -104,9 +103,9 @@ const Services = () => (
    <p className="ttext2"> OUR SERVICES</p><br/>
       <div className="tabss">
       <div>
-      <br/><br/>
-       <p className="ttext2"> Software Development Services</p><br/>
-       <h4></h4><br/>
+      
+       <p className="ttext2"> Software Development Services</p>
+       
             <div className="tabs">
                <div className="icon-box" >
                <div className="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"   style={{width:"48px"}} /> 
@@ -168,51 +167,56 @@ const Services = () => (
            </div> 
            </div>  
            <div>
-         <div className="ttext2">Database management and Cloud Services </div><br/>
-      
-           <div className="tabs"> 
-              <div className="icon-box">
+           <br/>
+           <br/>
+         <div className="ttext2">Database management and Cloud Services </div>
+         
+         
+           <div className="tabss1"> 
+              <div className="icon-box2">
               <div className="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" style={{width:"48px" }} alt=""/>
               </div>
-              <h4><a href=""></a></h4>
+              
               <p>My Sql</p>
               </div>
 
-              <div className="icon-box">
+              <div className="icon-box2">
               <div className="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" style={{width:"48px" }} alt=""/>
               </div>
-              <h4><a href=""></a></h4>
+              <h4></h4>
               <p>Sql Server</p>
               </div>
          
-              <div className="icon-box">
+              <div className="icon-box2">
               <div className="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" style={{width:"48px" }} alt=""/>
               </div>
-              <h4><a href=""></a></h4>
+              
               <p>Postgres</p>
+              </div>
+            </div> 
+
+              <div className="tabss1"> 
+              <div className="icon-box2">
+              <div className="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" style={{width:"48px" }} alt=""/>
+              </div>
+              
+              <p>Google cloud</p>
+              </div>
+              <div className="icon-box2">
+              <div className="icon"><img src="./images/blockchain.jpg" style={{ width: "48px" }} alt=""/></div>
+          
+              <p>Blockchain</p>
               </div>
            </div>
 
           <div className="tabss1">  
-              <div className="icon-box2">
-              <div className="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" style={{width:"48px" }} alt=""/>
-              </div>
-              <h4></h4>
-              <p>Google cloud</p>
-              </div>
+              
               <div className="icon-box2">
               <div className="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" style={{width:"48px" }} alt=""/>
               </div>
               <p>Azure</p>
               <p>(currently pursuing course of study)</p>
               </div>
-              <div className="icon-box2">
-              <div className="icon"><img src="./images/blockchain.jpg" style={{ width: "48px" }} alt=""/></div>
-              <h4></h4>
-              <p>Blockchain</p>
-              </div>
-              </div>
-            <div className="tabss1">  
               <div className="icon-box2">
               <div className="icon"><img src="./images/hyper.png" style={{ width: "48px" }} alt=""/></div>
               <p>Hyper ledger medium proficiency</p>
@@ -260,7 +264,10 @@ const Contact = () => (
       
      <div className="contact">
      <br />
-       <br /><br />
+     <br />
+     <div className="ttext">CONTACT US</div>
+     <br /><br />
+       
   
                 <p>Please contact us if you cannot find an answer to your question.</p><br />
                 <p>Happy to assist you even if its not work for us.</p>
@@ -283,7 +290,7 @@ const Contact = () => (
               <p>+91 9890444254</p>
             </div>
             </div><br /><br />
-                      <div className="ttext">CONTACT US</div><br /><br />
+                      
                       <p className="ttext3">Let us tailor a service package that meets your needs. Tell us a little about your<br /> business
                        and we will get back to you with some ideas as soon as possible.</p><br /><br />
 

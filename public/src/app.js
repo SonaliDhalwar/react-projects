@@ -15,6 +15,7 @@ import ReactDOM from 'react-dom';
 import FinTechSolutions from './components/FinTechSolutions';
 import 'normalize.css/normalize.css'
 import './styles/style2.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(<FinTechSolutions />, document.getElementById('app'));
 
 //import CounterApp from './components/CounterApp';

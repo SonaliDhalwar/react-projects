@@ -1,44 +1,71 @@
 
 
 
-//import emailjs from 'emailjs-com';
+//
 
 //import Swal from 'sweetalert2';
 
-//const SERVICE_ID = "gmail";
-//const TEMPLATE_ID = "template_v11wukn";
-//const USER_ID = "user_SqFXomacMciyfPDTErzh1";
+//
 
-import React from 'react';
+import React,{useState} from 'react';
+import emailjs from 'emailjs-com';
 
-  export default class ContactForm extends React.Component {
-    state = {
-      error: undefined
+const Result = () => {
+  return(
+    <p>Your message has been successfully sent. we will contact you soon.</p>
+  )
+}
+     function ContactForm (props) {
+     const result = useState(false);
+     const showResult = useState(false);
+     const sendEmail = (e) => {
+      e.preventDefault();
+    
+    emailjs.sendForm("service_ireaen2","template_6xsfrrb",e.target,"user_SqFXomacMciyfPDTErzh1")
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    e.target.reset();
+    showResult(true);
     };
-   
-    render() {
+    //const state = {
+      //error: undefined
+    //};
+    
+  
       return (
         <contactform>
         <div>
-          {this.state.error && <p className="add-option-error">{this.state.error}</p>}
-          <form >
-          <div className="Cform" >
+        <div className="Cform" >
+          <form  action="" onSubmit={sendEmail}>
+          
             <div className="formline2">
-            <input className="add-option__input" type="text" name="name" placeholder=" Your Name..." />
-            <input className="add-option__input" type="text" name="email" placeholder=" Your Email..." />
+            <input className="add-option__input" type="text" name="fullName" placeholder=" Your Name..." required />
+            <input className="add-option__input" type="text" name="email" placeholder=" Your Email..." required />
             </div>
             <div>
-            <input className="msg__input" type="text" name="subject" placeholder="subject..." />
+            <input className="msg__input" type="text" name="phone" placeholder="Phone Number..." required />
             </div>
             <div>
-            <input className="textarea__input" type="textarea" name="message"  placeholder=" Message..." />
+            <input className="msg__input" type="text" name="subject" placeholder="subject..." required />
             </div>
+            <div>
+            <textarea className="textarea__input" type="textarea" name="message"  placeholder=" Message..." required />
+            </div>
+            <br />
+              <div ><button type="submit"  className="submit-btn">Send Message</button>
+              
+              </div>
             
-              <div ><button type="submit"  className="submit-btn">Send Message</button></div>
-            </div>
           </form>
+          </div>
         </div>
         </contactform>
       );
-    }
-  }
+      }
+  export default ContactForm;
