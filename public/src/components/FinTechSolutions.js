@@ -7,6 +7,7 @@ import CarouselContainer from "./CarouselContainer";
 //import SliderData from "./SliderData";
 import Footer from './Footer';
 import ContactForm from './ContactForm';
+import FadeIn from "react-fade-in";
 //import form from '@material-ui/core/Container';
 //import form from 'react-bootstrap';
 
@@ -43,51 +44,49 @@ const Home = () => (
     
    
     <div className="hometext">
-    <div className="homeh">
+    <FadeIn delay="250" className="homeh">
 
-    <div className="ttext">ABOUT US</div><br/><br/>
-    <p >Fin Tech Solutions Private Limited is a dedicated Software contractor delivering Information Technology contracting services
-     for the Electronic Collateral Management / Cloud/ Blockchain / IT recruitment verticals. Fin Tech is based in Pune (India) with
-      clients based in Africa/ Europe/ Asia. We continue to remain a very small but high motivated team of developers, project managers,
-       HR executives, domain experts and full stack developers. Our core forte resides in cloud configuration, block chain development, 
-       Financial technology pertinent to Electronic Commodity Management, project management and IT recruitment and leasing.</p><br/>
-       <br/>
-       <p className="ttext3">Fin Tech Solutions  Private Limited</p> <br/>
+         <div className="ttext">ABOUT US</div><br/><br/>
+         <p >Fin Tech Solutions Private Limited is a dedicated Software contractor delivering Information Technology contracting services
+         for the Electronic Collateral Management / Cloud/ Blockchain / IT recruitment verticals. Fin Tech is based in Pune (India) with
+         clients based in Africa/ Europe/ Asia. We continue to remain a very small but high motivated team of developers, project managers,
+         HR executives, domain experts and full stack developers. Our core forte resides in cloud configuration, block chain development, 
+         Financial technology pertinent to Electronic Commodity Management, project management and IT recruitment and leasing.</p><br/>
+         <br/>
+          <p className="ttext3">Fin Tech Solutions  Private Limited</p> <br/>
 
-    <div className="social">
-    <div className="so">
-    <a href="https://www.linkedin.com/in/troy-miranda-a5b1377/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style={{width:"35px"}} />
-    </a><br/>
+         <div className="social">
+         <div className="so">
+         <a href="https://www.linkedin.com/in/troy-miranda-a5b1377/" target="_blank">
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style={{width:"35px"}} />
+         </a><br/>
     
     
-      <a href="" target="_self">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" style={{width:"35px"}} /></a>
-    </div>   
-    </div> 
-    <br/>
-    <p>Value Creation through Software IP development</p><br/>
+          <a href="" target="_self">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" style={{width:"35px"}} /></a>
+          </div>   
+          </div> 
+          <br/>
+           <p>Value Creation through Software IP development</p><br/>
     
     
-    <p className="ttext3">Fin Tech develops pertinent IP in its core domain expertise in Electronic Commodity Management with blockchain compliance.
-       In that regard, we are value creators for our dedicated clients on contractual basis only.</p> <br/><br/>
-       <div className="llink">
-       <NavLink to="/services" activeClassName="is-active"  >SEE SERVICES</NavLink> </div>
-       <h3></h3><br/>
-       <p>IT Competency Guaranteed</p><br/><br/>
+             <p className="ttext3">Fin Tech develops pertinent IP in its core domain expertise in Electronic Commodity Management with blockchain compliance.
+             In that regard, we are value creators for our dedicated clients on contractual basis only.</p> <br/><br/>
+             <div className="llink">
+             <NavLink to="/services" activeClassName="is-active"  >SEE SERVICES</NavLink> </div>
+              <h3></h3><br/>
+              <p>IT Competency Guaranteed</p><br/><br/>
   
       
-     <p className="ttext3">We stick to our strengths- specific and high IT skills sets in very narrow domain. In that respect,
-      we endeavor to all round excel in HR recruitment, Software IP development, project management and cloud Infra configuration.
-      In that regard, we are value creators for our dedicated clients on contractual basis only.</p> <br/><br/>
-       <div className="llink">
-       <NavLink to="/contact" activeClassName="is-active" exact={true}>CONTACT US</NavLink>
-       </div>
+              <p className="ttext3">We stick to our strengths- specific and high IT skills sets in very narrow domain. In that respect,
+                we endeavor to all round excel in HR recruitment, Software IP development, project management and cloud Infra configuration.
+              In that regard, we are value creators for our dedicated clients on contractual basis only.</p> <br/><br/>
+              
+              <div className="llink">
+               <NavLink to="/contact" activeClassName="is-active" >CONTACT US</NavLink>
+              </div>
     
-       
-     
-     
-     </div>
+     </FadeIn>
      </div>
     <Footer  />
     </div>
@@ -98,9 +97,9 @@ const Services = () => (
   <div>
       <Navbar />
       
-   <div  className="services">
+   <div className="services">
    
-   <p className="ttext2"> OUR SERVICES</p><br/>
+   <FadeIn delay="250" className="ttext2"> OUR SERVICES</FadeIn><br/>
       <div className="tabss">
       <div>
       
@@ -230,9 +229,9 @@ const Services = () => (
            </div>
            </div>
         
-  </div>
-  <br />
-  <br />
+    </div >
+    <br />
+    <br />
 
 
 
@@ -265,7 +264,7 @@ const Contact = () => (
      <div className="contact">
      <br />
      <br />
-     <div className="ttext">CONTACT US</div>
+     <FadeIn delay="250" className="ttext">CONTACT US</FadeIn>
      <br /><br />
        
   

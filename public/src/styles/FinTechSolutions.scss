@@ -91,7 +91,7 @@ li {
     align-items: center;
   }
   .image{
-    
+    background-image: url("C:/Users/HP/Desktop/react-course-project/react-projects/public/images/sliderOne.jpg") alt("technology") ;
     margin-top: 25px;
     margin-left: 150px;
     width: 32cm;
@@ -100,11 +100,11 @@ li {
     align-items: center;
     //box-sizing: border-box;
     border-radius: 10px;
-    
+    position:"absolute"
   }
  
   .picHomePage {
-    
+    background-image: url("C:/Users/HP/Desktop/react-course-project/react-projects/public/images/sliderOne.jpg") alt("technology") ;
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     //padding: 20px 0;
